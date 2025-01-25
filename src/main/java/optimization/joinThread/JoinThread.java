@@ -1,4 +1,4 @@
-package joinThread;
+package optimization.joinThread;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -21,7 +21,6 @@ public class JoinThread {
             thread.setDaemon(true);
             thread.start();
         }
-
 
         for (Thread thread : threads) {
             thread.join(2000L);
